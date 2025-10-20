@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0; 
+  color: #222;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+  padding: 12px;
+  background: #f0f0f0;
+}
+
+.hero-section, .gallery, .about-us {
+  background: #f0f0f0; 
+  padding: 10px 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+ .nav-home {
+   font-size: 16px; 
+   color: #000; 
+   padding: 10px; 
+ }
+  align-items: center;
+  padding: 8px 12px;
+  background: #e6e6e6; 
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.navbar .brand{
+  font-weight: bold;
+}
+.nav-links{ list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; }
+.nav-links li{ display: inline-block; }
+.nav-links a{ text-decoration: none; color: #222; }
+.nav-links a:hover{ text-decoration: underline; }
+
+.hero-section {
+  text-align: center;
+}
+
+h1.site-title {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.hero-section img, .gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.gallery {
+  padding-top: 6px;
+}
+
+.gallery-flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: stretch; 
+}
+
+.gallery-item{
+  width: 48%;
+  display: flex;
+}
+
+.gallery-item .gallery-img-wrapper{
+  width: 100%;
+  height: 220px; 
+  overflow: hidden; 
+}
+
+.gallery-item .gallery-img-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-us{ padding-top: 12px; }
+
+table{ width: 100%; border-collapse: collapse; }
+th, td{ padding: 6px; border: 1px solid #ccc; text-align: left; }
+
+@media (max-width: 700px){
+  .container{ width: 95%; }
+  .gallery-item{ width: 100%; }
+}
